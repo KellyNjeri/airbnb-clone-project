@@ -60,7 +60,7 @@ Build a scalable Airbnb-like platform for property listings, bookings, and payme
 - A **payment** belongs to a **booking**.
 - A **review** is written by a **user** for a **property**.
 
-## ## Feature Breakdown
+##  Feature Breakdown
 
 ### 1. User Management  
 This feature handles user registration, authentication, and profile management. It ensures that both guests and hosts have secure access to the platform, with proper account setup and login functionality.  
