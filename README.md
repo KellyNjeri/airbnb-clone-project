@@ -1,17 +1,18 @@
 # Airbnb Clone Project  
 
 ## 🚀 Objective  
-To build a scalable Airbnb-like platform with booking, listing, and payment features.  
+Build a scalable Airbnb-like platform for property listings, bookings, and payments.  
 
 ## 🏆 Goals  
-- Implement secure user authentication  
-- Create property listing management  
-- Develop a booking and payment system  
-- Ensure performance and scalability  
+- User authentication & profile management  
+- Property listing & booking system  
+- Secure payment integration  
+- Scalable backend with APIs  
 
 ## ⚙️ Tech Stack  
 - **Backend**: Django  
 - **Database**: PostgreSQL  
-- **API**: GraphQL  
-- **Frontend**: React (optional)  
-- **Deployment**: Docker, AWS  
+- **API**: GraphQL & REST  
+- **Deployment**: Docker, CI/CD  
+
+
