@@ -16,3 +16,8 @@ Build a scalable Airbnb-like platform for property listings, bookings, and payme
 - **Deployment**: Docker, CI/CD  
 
 
+## 👥 Team Roles  
+- **Backend Developer**: Builds APIs, business logic, and integrations.  
+- **Database Administrator**: Designs schemas, indexing, ensures DB optimization.  
+- **DevOps Engineer**: Manages deployment, CI/CD pipelines, scaling.  
+- **QA Engineer**: Tests APIs, ensures project quality and security. 
