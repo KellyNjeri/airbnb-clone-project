@@ -60,27 +60,73 @@ Build a scalable Airbnb-like platform for property listings, bookings, and payme
 - A **payment** belongs to a **booking**.
 - A **review** is written by a **user** for a **property**.
 
-## Feature Breakdown
-- **User Management**: Register/login, manage profiles, authentication.
-- **Property Management**: Hosts create/update/delete property listings.
-- **Booking System**: Guests book properties, manage check-in/out.
-- **Payments**: Secure handling of booking payments.
-- **Reviews**: Guests leave ratings & reviews for properties.
+## ## Feature Breakdown
 
-## API Security
-- **Authentication**: JWT tokens to secure user sessions.
-- **Authorization**: Role-based access (hosts vs guests).
-- **Rate Limiting**: Prevent abuse of API calls.
-- **Data Protection**: Secure sensitive data (e.g., passwords, payment info).
-- **Why Important**: Protects user privacy, prevents fraud, ensures trust.
+### 1. User Management  
+This feature handles user registration, authentication, and profile management. It ensures that both guests and hosts have secure access to the platform, with proper account setup and login functionality.  
+
+### 2. Property Management  
+Hosts can list properties, update details, upload images, and manage availability. This feature ensures that potential guests have accurate and up-to-date information when searching for accommodations.  
+
+### 3. Booking System  
+Guests can search for available properties, select dates, and make reservations. The system manages availability calendars and prevents double-bookings, creating a smooth experience for both hosts and guests.  
+
+### 4. Payment Processing  
+Secure payment gateways are integrated to allow guests to pay for bookings and hosts to receive payouts. This ensures trust and financial security within the platform.  
+
+### 5. Search & Filtering  
+Guests can search for properties based on location, price, amenities, and availability. This feature improves usability by helping users quickly find the most relevant listings.  
+
+### 6. Reviews & Ratings  
+Guests can leave reviews and ratings for properties after their stay. This builds trust within the community and helps future guests make informed decisions.  
+
+### 7. Admin Dashboard  
+An admin panel provides oversight of users, properties, and transactions. This feature ensures smooth operation, compliance, and fraud detection across the platform.  
+
+
+## API Security  
+
+Securing the backend APIs is critical to ensure the safety, reliability, and trustworthiness of the Airbnb Clone platform. The following security measures will be implemented:  
+
+### 1. Authentication  
+All users must verify their identity through secure login mechanisms (e.g., JWT tokens, OAuth).  
+**Why it matters:** This ensures only registered and verified users can access protected features such as booking and property management.  
+
+### 2. Authorization  
+Role-based access control will be enforced to differentiate between hosts, guests, and admins.  
+**Why it matters:** Prevents unauthorized users from accessing or modifying sensitive data (e.g., only hosts can manage their listings, only admins can manage the entire system).  
+
+### 3. Data Encryption  
+Sensitive information (like passwords and payment details) will be encrypted both in transit (HTTPS/SSL) and at rest.  
+**Why it matters:** Protects user data from being intercepted or leaked during communication or storage.  
+
+### 4. Rate Limiting & Throttling  
+API requests will be rate-limited to prevent abuse such as brute force attacks or denial-of-service attempts.  
+**Why it matters:** Ensures system stability and protects against malicious overloads.  
+
+### 5. Input Validation & Sanitization  
+All inputs will be validated and sanitized to prevent injection attacks (SQL injection, XSS).  
+**Why it matters:** Protects both the database and users from data corruption or exploitation.  
+
+By implementing these security measures, the Airbnb Clone project will safeguard user data, secure payment transactions, and maintain a trustworthy experience for all users.  
+
 
 ## CI/CD Pipeline
-- **Definition**: CI/CD automates testing, building, and deployment of code.
-- **Importance**: Ensures quick, reliable updates with minimal errors.
-- **Tools**:
-  - **GitHub Actions**: Run automated tests & deployments.
-  - **Docker**: Containerize the app for consistent environments.
-  - **Heroku/AWS**: Deployment platforms for scaling the app.
+
+A **CI/CD pipeline** (Continuous Integration and Continuous Deployment/Delivery) is an automated process that helps developers integrate code changes frequently, test them efficiently, and deploy applications reliably. It ensures that the Airbnb Clone project remains stable, scalable, and ready for production as new features are added.
+
+CI/CD is important for this project because it:
+- Reduces the risk of bugs by running automated tests before deployment.  
+- Speeds up development cycles with continuous integration of new features.  
+- Ensures smooth, repeatable deployments with minimal downtime.  
+
+**Tools we can use for the pipeline include:**
+- **GitHub Actions**: For automating builds, tests, and deployments.  
+- **Docker**: To containerize the application and ensure consistency across environments.  
+- **Jenkins or Travis CI**: Alternative CI/CD tools for advanced workflows.  
+- **Kubernetes** (optional): For orchestrating deployments in production environments.  
+
+
 
 
 
